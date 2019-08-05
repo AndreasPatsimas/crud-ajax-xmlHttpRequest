@@ -29,7 +29,6 @@ httpRequest.prototype.post = function(url,data, callback){
 
     this.http.setRequestHeader("Content-type", "application/json");
 
-    let self = this;
     this.http.onload = function(){
 
         callback(null,this.responseText);
@@ -47,7 +46,6 @@ httpRequest.prototype.put = function(url,data, callback){
 
     this.http.setRequestHeader("Content-type", "application/json");
 
-    let self = this;
     this.http.onload = function(){
 
         callback(null,this.responseText);
